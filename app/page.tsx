@@ -4,8 +4,11 @@ export default function Home() {
             className="flex justify-center"
             style={{ backgroundColor: "#333", minHeight: "100vh" }}
         >
-            <button className="submit-button">
-                <img src="/img/start_img.png" alt="logo" width={244} />
+            <button
+                className="submit-button"
+                style={{ width: 252, height: 54, backgroundColor: "#EFA64C" }}
+            >
+                지금 참여하기
             </button>
         </div>
     );
