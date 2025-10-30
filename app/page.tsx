@@ -1,65 +1,65 @@
-import Image from "next/image";
-
 export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    return (
+        <div>
+            <ButtonIcon />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+    );
 }
+
+const ButtonIcon = () => {
+    return (
+        <svg
+            width="252"
+            height="54"
+            viewBox="0 0 252 54"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <g filter="url(#filter0_d_4_6)">
+                <rect x="4" width="244" height="46" fill="#EFA64C" />
+            </g>
+            <path
+                d="M78.7344 18.3984C78.7344 21.2305 79.7891 24.3555 83.0508 25.6836L81.3906 28.125C79.3203 27.2754 77.9824 25.6934 77.2109 23.75C76.4199 25.9082 75.0625 27.666 72.9531 28.5938L71.1953 26.1328C74.4375 24.7266 75.5312 21.4258 75.5312 18.3984V18.0859H71.9766V15.5469H82.1914V18.0859H78.7344V18.3984ZM86.6641 13.8672V31.9336H83.5V13.8672H86.6641ZM103.383 14.6094V16.1328C103.383 17.5391 103.383 19.043 102.992 20.9961H105.199V23.4766H88.6953V20.9961H99.8281C100.141 19.4629 100.219 18.2324 100.258 17.0898H90.668V14.6094H103.383ZM103.227 25.0391V31.7773H90.5898V25.0391H103.227ZM93.6758 27.4609V29.2773H100.121V27.4609H93.6758ZM117.758 17.4805C117.738 20.8203 118.773 24.1406 122.113 25.4883L120.297 28.0078C118.295 27.1289 116.996 25.5762 116.215 23.6133C115.424 25.8105 114.057 27.5586 111.879 28.4961L110.004 25.8984C113.461 24.5117 114.555 21.0352 114.574 17.4805V15.1562H117.758V17.4805ZM125.59 13.8672V31.9922H122.426V13.8672H125.59ZM137.934 14.8047V17.2852H134.652C134.818 19.082 135.863 20.9473 138.676 21.8164L137.094 24.2383C135.16 23.6328 133.861 22.4707 133.07 21.0156C132.27 22.6074 130.922 23.877 128.871 24.5117L127.23 22.1094C130.131 21.2305 131.215 19.209 131.43 17.2852H128.051V14.8047H137.934ZM142.074 13.8672V18.0078H144.32V20.5859H142.074V24.7852H138.93V13.8672H142.074ZM142.074 25.4297V31.9336H138.93V27.9102H129.711V25.4297H142.074ZM159.32 13.8672V20.7227H161.762V23.2812H159.32V31.9336H156.215V13.8672H159.32ZM155.336 16.4453V18.9258H144.809V16.4453H148.539V14.1992H151.664V16.4453H155.336ZM150.102 19.6289C152.777 19.6289 154.828 21.4648 154.828 24.0234C154.828 26.6016 152.777 28.4375 150.102 28.4375C147.367 28.4375 145.355 26.6016 145.355 24.0234C145.355 21.4648 147.367 19.6289 150.102 19.6289ZM150.102 22.1484C149.086 22.1484 148.344 22.8125 148.363 24.0234C148.344 25.293 149.086 25.8984 150.102 25.8984C151.098 25.8984 151.82 25.293 151.82 24.0234C151.82 22.8125 151.098 22.1484 150.102 22.1484ZM177.523 13.8672V31.9336H174.34V13.8672H177.523ZM172.055 15.7227C172.055 21.3867 170.453 25.8984 163.754 29.0234L162.152 26.5625C166.664 24.4141 168.471 21.9336 168.871 18.1641H163.188V15.7227H172.055Z"
+                fill="#FFF8E7"
+                fill-opacity="0.8"
+            />
+            <defs>
+                <filter
+                    id="filter0_d_4_6"
+                    x="0"
+                    y="0"
+                    width="252"
+                    height="54"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_4_6"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_4_6"
+                        result="shape"
+                    />
+                </filter>
+            </defs>
+        </svg>
+    );
+};
