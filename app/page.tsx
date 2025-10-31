@@ -18,13 +18,15 @@ export default function Home() {
         }
     };
 
+    const maxSize = 800;
+
     return (
         <div
             className="flex justify-center"
             style={{
                 backgroundColor: "#333",
                 minHeight: "100vh",
-                maxWidth: "500px",
+                maxWidth: `${maxSize}px`,
                 margin: "0 auto",
                 position: "relative",
             }}
@@ -33,7 +35,8 @@ export default function Home() {
 
             <div
                 style={{
-                    position: "absolute",
+                    maxWidth: `${maxSize}px`,
+                    position: "fixed",
                     bottom: "0px",
                     width: "100%",
                     display: "flex",
