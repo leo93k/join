@@ -1,6 +1,23 @@
 "use client";
 
+import { useRef } from "react";
+
 export default function Home() {
+    const hasTrackedClick = useRef(false);
+
+    const handleClick = () => {
+        alert("지금 서비스가 준비중이에요!");
+
+        if (!hasTrackedClick.current && typeof window !== "undefined") {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            const gtag = (window as any).gtag;
+            if (gtag) {
+                gtag("event", "join_button_click");
+                hasTrackedClick.current = true;
+            }
+        }
+    };
+
     return (
         <div
             className="flex justify-center"
@@ -33,9 +50,7 @@ export default function Home() {
                         color: "#000",
                         fontSize: "16px",
                     }}
-                    onClick={() => {
-                        alert("지금 서비스가 준비중이에요!");
-                    }}
+                    onClick={handleClick}
                 >
                     지금 시작하기
                 </button>
