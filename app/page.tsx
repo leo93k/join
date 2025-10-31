@@ -31,7 +31,7 @@ export default function Home() {
                 position: "relative",
             }}
         >
-            <img src="/img/join.png" alt="logo" style={{ width: "100%" }} />
+            <img src="/img/join2.png" alt="logo" style={{ width: "100%" }} />
 
             <div
                 style={{
