@@ -21,13 +21,19 @@ export default function Home() {
     return (
         <div
             className="flex justify-center"
-            style={{ backgroundColor: "#333", minHeight: "100vh" }}
+            style={{
+                backgroundColor: "#333",
+                minHeight: "100vh",
+                maxWidth: "500px",
+                margin: "0 auto",
+                position: "relative",
+            }}
         >
             <img src="/img/join.png" alt="logo" style={{ width: "100%" }} />
 
             <div
                 style={{
-                    position: "fixed",
+                    position: "absolute",
                     bottom: "0px",
                     width: "100%",
                     display: "flex",
